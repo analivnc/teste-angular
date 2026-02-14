@@ -4,9 +4,11 @@ import { FormGroup, ReactiveFormsModule, FormControl, Validators } from '@angula
 
 @Component({
   selector: 'app-login',
-  imports: [Conteiner, ReactiveFormsModule],
+  standalone: true,
   templateUrl: './login.html',
-  styleUrl: './login.css',
+  styleUrls: ['./login.css'],
+
+
 })
 
 
@@ -16,9 +18,11 @@ export class Login {
 
   constructor() {
     this.emailForm = new FormGroup({
-     email: new FormControl('', [Validators.required, Validators.email]),
-     senha: new FormControl('', [Validators.required])
-    });
+  email: new FormControl('', [Validators.required, Validators.email]),
+  senha: new FormControl('', [Validators.required]),
+  lembrar: new FormControl(false)
+});
+
   }
 
   salvarEmail() {
