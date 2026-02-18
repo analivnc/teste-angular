@@ -6,12 +6,15 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   standalone: true,
+
   imports: [
     Conteiner,
     ReactiveFormsModule
   ],
   templateUrl: './login.html',
   styleUrls: ['./login.css'],
+
+
 })
 export class Login {
 
@@ -23,6 +26,8 @@ export class Login {
       senha: new FormControl('', [Validators.required]),
       lembrar: new FormControl(false)
     });
+  
+
   }
 
 

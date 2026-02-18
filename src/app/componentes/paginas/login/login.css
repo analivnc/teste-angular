@@ -29,6 +29,11 @@ h2 {
   font-size: 26px;
   font-weight: 700;
   color: #08206b;
+
+  font-family: 'Montserrat';
+  font-size: 26px;
+  font-weight: 700;
+  color: #4568CD;
   margin: 12px 0;
 }
 
@@ -38,6 +43,8 @@ hr {
   border: none;
   height: 1px;
   background-color: #0080ff;
+  background-color: #CED4DA;
+
 }
 
 label {
@@ -118,3 +125,4 @@ button:disabled {
 .esqueci a:hover {
   text-decoration: underline;
 }
+
