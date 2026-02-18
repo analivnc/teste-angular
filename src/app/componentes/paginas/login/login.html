@@ -1,7 +1,8 @@
 <app-conteiner>
 
-  <div class="login-container">
 
+
+  
     <div class="logo">
       <img src="assets/logo.png" alt="">
     </div>
@@ -15,8 +16,10 @@
    
     <h2>Acessar conta</h2>
     <hr>
+<div class="login-container">
 
         <form [formGroup]="emailForm" (ngSubmit)="salvarEmail()">
+        <span class="material-symbols-outlined">mail</span>
         <label for="email">E-mail</label>
         <input type="email" id="email" placeholder="Email" formControlName="email">
         
@@ -25,13 +28,15 @@
         <input type="password" id="senha" placeholder="Senha" formControlName="senha">
 
          <div class="lembrar-container">
-        <input type="checkbox" id="lembrar" formControlName="lembrar">
-        <label for="lembrar">Lembrar-me</label>
-      </div>
+         <input type="checkbox" id="lembrar" formControlName="lembrar">
+         <label for="lembrar">Lembrar-me</label>
+         </div>
 
-      <button type="submit"[disabled]="emailForm.invalid">Entrar</button>
+      <button type="submit" [disabled]="emailForm.invalid">Entrar</button>
+
+
       <div class="esqueci">
-        <a href="#">Esqueci minha senha</a>
+      <a routerLink="/esqueci-senha">Esqueci minha senha</a>
       </div>
 
     </form>

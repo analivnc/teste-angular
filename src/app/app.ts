@@ -8,9 +8,8 @@ import { ListaContatos } from './componentes/paginas/lista-contatos/lista-contat
   selector: 'app-root',
   imports: [
     RouterOutlet,
-    CommonModule,
-    FormularioContato,
-    ListaContatos,
+    CommonModule
+  
     
   ],
   templateUrl: './app.html',

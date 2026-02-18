@@ -1,0 +1,99 @@
+h3 {
+  text-align: center;
+  color: #0D6EFD;
+  font-family: 'Montserrat';
+  font-size: 25px;
+
+
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.logo img {
+  max-width: 400px;
+}
+
+
+.caixa {
+  background-color: #afcbf5; 
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 350px;
+}
+
+.foto, h4 {
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+hr {
+  margin-bottom: 25px;
+  border: none;
+  height: 1px;
+  background-color: #0080ff;
+}
+
+
+
+h4{
+  margin-left: 10px;
+  font-family: 'Montserrat';
+
+}
+
+.foto{
+   width: 70px;
+  height: 70px;
+  object-fit: cover; 
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.botoes {
+display: flex;
+justify-content: space-between;
+}
+ 
+.btn-excluir, .btn-editar {
+width: 180px;
+height: 41px;
+padding: 6px, 12px;
+border-radius: 4px;
+border: 1px;
+gap: 8px;
+font-family: 'Montserrat';
+font-size: 18px;
+font-weight: 700;
+text-align: center;
+
+}
+ 
+.btn-excluir {
+color:#0D6EFD;
+background-color: #d3d3d3;
+border: 1px solid #0D6EFD;
+cursor: pointer;
+ 
+}
+ 
+.btn-editar {
+color:#FFFFFF;
+background-color: #0D6EFD;
+cursor: pointer;
+}
+
+.info {
+    font-family: 'Montserrat';
+
+
+}
+ 
+
